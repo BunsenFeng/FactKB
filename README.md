@@ -1,3 +1,7 @@
+## FactKB
+
+[FACTKB: Generalizable Factuality Evaluation using Language Models Enhanced with Factual Knowledge](https://arxiv.org/abs/2305.08281). EMNLP 2023.
+
 ### Quick Start
 
 A quick demo of FactKB is available at: https://huggingface.co/bunsenfeng/FactKB.
@@ -19,4 +23,5 @@ result = torch.softmax(factkb(**tokens).logits, dim = 1)
 print('The factuality score (0-1, 1 as factual) is: ', float(result[0][1]))
 ```
 
-Please allow me to finish the current batch of commitments before releasing the full code, data, and models.
+### Data Pointers
+[FactCollect dataset](https://aclanthology.org/2022.naacl-main.236/) [FRANK benchmark](https://arxiv.org/abs/2104.13346) [CovidFact, Healthver, SciFact](https://arxiv.org/abs/2112.01640)
