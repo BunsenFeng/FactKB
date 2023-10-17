@@ -24,4 +24,6 @@ print('The factuality score (0-1, 1 as factual) is: ', float(result[0][1]))
 ```
 
 ### Data Pointers
-[FactCollect dataset](https://aclanthology.org/2022.naacl-main.236/) [FRANK benchmark](https://arxiv.org/abs/2104.13346) [CovidFact, Healthver, SciFact](https://arxiv.org/abs/2112.01640)
+[FactCollect dataset](https://aclanthology.org/2022.naacl-main.236/)
+[FRANK benchmark](https://arxiv.org/abs/2104.13346)
+[CovidFact, Healthver, SciFact](https://arxiv.org/abs/2112.01640)
