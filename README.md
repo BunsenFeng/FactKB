@@ -1,6 +1,7 @@
 ## FactKB
 
-[FACTKB: Generalizable Factuality Evaluation using Language Models Enhanced with Factual Knowledge](https://arxiv.org/abs/2305.08281). EMNLP 2023.
+[FACTKB: Generalizable Factuality Evaluation using Language Models Enhanced with Factual Knowledge](https://arxiv.org/abs/2305.08281).
+EMNLP 2023.
 
 ### Quick Start
 
