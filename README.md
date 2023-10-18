@@ -53,7 +53,7 @@ usage: gen_evidence.py [-h] [-k KG] [-n NUM]
 optional arguments:
   -h, --help         show this help message and exit
   -k KG, --kg KG     which knowledge graph to use (in the kg/ folder))
-  -n NUM, --num NUM  how many (entity, evidence) to employ
+  -n NUM, --num NUM  how many (entity, evidence) to employ (default 100k)
 ```
 
 3) Knowledge Walk `gen_walk.py`
@@ -64,8 +64,8 @@ usage: gen_walk.py [-h] [-k KG] [-n NUM] [-l LEN]
 optional arguments:
   -h, --help         show this help message and exit
   -k KG, --kg KG     which knowledge graph to use (in the kg/ folder))
-  -n NUM, --num NUM  how many paths to generate
-  -l LEN, --len LEN  how long each path is
+  -n NUM, --num NUM  how many paths to generate (default 100k)
+  -l LEN, --len LEN  how long each path is (default 5)
 ```
 
 A text file should appear in `kg/` with the strategy you chose and hyperparameters. It is a line-by-line text file with each line representing one created synthetic knowledge instance.
