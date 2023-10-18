@@ -42,7 +42,7 @@ usage: gen_wiki.py [-h] [-k KG]
 
 optional arguments:
   -h, --help      show this help message and exit
-  -k KG, --kg KG  which knowledge graph to use (in the \kg folder))
+  -k KG, --kg KG  which knowledge graph to use (in the kg/ folder))
 ```
 
 2) Evidence Extraction `gen_evidence.py`
@@ -52,7 +52,7 @@ usage: gen_evidence.py [-h] [-k KG] [-n NUM]
 
 optional arguments:
   -h, --help         show this help message and exit
-  -k KG, --kg KG     which knowledge graph to use (in the \kg folder))
+  -k KG, --kg KG     which knowledge graph to use (in the kg/ folder))
   -n NUM, --num NUM  how many (entity, evidence) to employ
 ```
 
@@ -63,7 +63,7 @@ usage: gen_walk.py [-h] [-k KG] [-n NUM] [-l LEN]
 
 optional arguments:
   -h, --help         show this help message and exit
-  -k KG, --kg KG     which knowledge graph to use (in the \kg folder))
+  -k KG, --kg KG     which knowledge graph to use (in the kg/ folder))
   -n NUM, --num NUM  how many paths to generate
   -l LEN, --len LEN  how long each path is
 ```
