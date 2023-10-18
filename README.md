@@ -29,7 +29,7 @@ print('The factuality score (0-1, 1 as factual) is: ', float(result[0][1]))
 
 Download KG data (kg.zip) and training/evaluation data (data.zip) at TBD. Unzip so that there are two directories: `kg` and `data`.
 
-Six folders in `kg/' represent each knowledge graph, four folders in `data/` represent each dataset (`fact` for FactCollect, the others you could probably tell which is which).
+Six folders in `kg/` represent each knowledge graph, four folders in `data/` represent each dataset (`fact` for FactCollect, the others you could probably tell which is which).
 
 ### Step 1: synthetic KG-based factuality pretraining data generation
 
