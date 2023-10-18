@@ -84,13 +84,13 @@ optional arguments:
   -c CORPUS, --corpus CORPUS
                         which KG-based synthetic corpus to use for training
   -b BATCH_SIZE, --batch_size BATCH_SIZE
-                        batch size
+                        batch size (default 32)
   -e EPOCHS, --epochs EPOCHS
-                        number of epochs
+                        number of epochs (default 5)
   -l LEARNING_RATE, --learning_rate LEARNING_RATE
-                        learning rate
+                        learning rate (default 2e-5)
   -w WEIGHT_DECAY, --weight_decay WEIGHT_DECAY
-                        weight decay
+                        weight decay (default 1e-5)
 ```
 
 ### Step 3: Train it as a Factuality Evaluation Model
