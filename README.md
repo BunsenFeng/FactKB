@@ -97,7 +97,7 @@ optional arguments:
 
 Grab the factuality pretrained model, train it on FactCollect alone / a combination of FactCollect and several fact-checking datasets / whatever you see fit.
 
-Note: in `data/fact`, the unfiltered versions are the full of FactCollect; the filtered (without "filtered" in names) are the ones that removed FRANK instances (for experiments in Table 2 and a few other papers).
+Note: in `data/fact`, the unfiltered versions are the full of FactCollect; the filtered (with "filtered" in names) are the ones that removed FRANK instances (for experiments in Table 2 and a few other papers).
 
 ### Data Pointers
 
