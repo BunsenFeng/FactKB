@@ -31,6 +31,8 @@ Download KG data (kg.zip) and training/evaluation data (data.zip) at [link](http
 
 Six folders in `kg/` represent each knowledge graph, four folders in `data/` represent each dataset (`fact` for FactCollect, the others you could probably tell which is which).
 
+`mkdir models` and `mkdir weights` to create two directories to store pretrained and trained models.
+
 ### Step 1: synthetic KG-based factuality pretraining data generation
 
 Generate with the three factuality pretraining strategies:
