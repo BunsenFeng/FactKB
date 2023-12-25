@@ -115,15 +115,15 @@ optional arguments:
   -s TEST_DATASET, --test_dataset TEST_DATASET
                         which dataset to test on in data/
   -f FILTER, --filter FILTER
-                        which test set filter to use, cnndm/xsum, when testing on FactCollect
+                        which test set filter to use, cnndm/xsum, when testing on FactCollect (default "none")
   -b BATCH_SIZE, --batch_size BATCH_SIZE
-                        batch size
+                        batch size (default 32)
   -e EPOCHS, --epochs EPOCHS
-                        number of epochs
+                        number of epochs (default 50)
   -l LEARNING_RATE, --learning_rate LEARNING_RATE
-                        learning rate
+                        learning rate (default 1e-4)
   -w WEIGHT_DECAY, --weight_decay WEIGHT_DECAY
-                        weight decay
+                        weight decay (default 1d-5)
 ```
 
 It will be automatically saved and evaluated on the test split of your specified test dataset.
