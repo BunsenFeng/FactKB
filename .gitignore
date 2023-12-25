@@ -1,2 +1,6 @@
 kg/
 data/
+models/
+weights/
+lightning_logs/
+__pycache__/
