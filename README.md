@@ -101,6 +101,33 @@ Grab the factuality pretrained model, train it on FactCollect alone / a combinat
 
 Note: in `data/fact`, the unfiltered versions are the full of FactCollect; the filtered (with "filtered" in names) are the ones that removed FRANK instances (for experiments in Table 2 and a few other papers).
 
+```
+usage: train.py [-h] [-m MODEL] [-c CORPUS] [-t TRAIN_DATASET] [-s TEST_DATASET] [-f FILTER] [-b BATCH_SIZE] [-e EPOCHS] [-l LEARNING_RATE] [-w WEIGHT_DECAY]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -m MODEL, --model MODEL
+                        which language model to use as backbone (in huggingface format)
+  -c CORPUS, --corpus CORPUS
+                        which KG-based synthetic corpus to use for training, none for vanilla LM
+  -t TRAIN_DATASET, --train_dataset TRAIN_DATASET
+                        which dataset to train on in data/
+  -s TEST_DATASET, --test_dataset TEST_DATASET
+                        which dataset to test on in data/
+  -f FILTER, --filter FILTER
+                        which test set filter to use, cnndm/xsum, when testing on FactCollect
+  -b BATCH_SIZE, --batch_size BATCH_SIZE
+                        batch size
+  -e EPOCHS, --epochs EPOCHS
+                        number of epochs
+  -l LEARNING_RATE, --learning_rate LEARNING_RATE
+                        learning rate
+  -w WEIGHT_DECAY, --weight_decay WEIGHT_DECAY
+                        weight decay
+```
+
+It will be automatically saved and evaluated on the test split of your specified test dataset.
+
 ### Data Pointers
 
 This work wouldn't be possible without the following datasets and resources:
@@ -114,10 +141,23 @@ This work wouldn't be possible without the following datasets and resources:
 ### Reference
 
 ```
-@article{feng2023factkb,
-  title={Factkb: Generalizable factuality evaluation using language models enhanced with factual knowledge},
-  author={Feng, Shangbin and Balachandran, Vidhisha and Bai, Yuyang and Tsvetkov, Yulia},
-  journal={arXiv preprint arXiv:2305.08281},
-  year={2023}
+@inproceedings{feng-etal-2023-factkb,
+    title = "{F}act{KB}: Generalizable Factuality Evaluation using Language Models Enhanced with Factual Knowledge",
+    author = "Feng, Shangbin  and
+      Balachandran, Vidhisha  and
+      Bai, Yuyang  and
+      Tsvetkov, Yulia",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.59",
+    doi = "10.18653/v1/2023.emnlp-main.59",
+    pages = "933--952",
+    abstract = "Evaluating the factual consistency of automatically generated summaries is essential for the progress and adoption of reliable summarization systems. Despite recent advances, existing factuality evaluation models are not robust, being especially prone to entity and relation errors in new domains. We propose FactKB{---}a simple new approach to factuality evaluation that is generalizable across domains, in particular with respect to entities and relations. FactKB is based on language models pretrained using facts extracted from external knowledge bases. We introduce three types of complementary factuality pretraining objectives based on entity-specific facts, facts extracted from auxiliary knowledge about entities, and facts constructed compositionally through knowledge base walks. The resulting factuality evaluation model achieves state-of-the-art performance on two in-domain news summarization benchmarks as well as on three out-of-domain scientific literature datasets. Further analysis of FactKB shows improved ability to detect erroneous entities and relations in summaries and is robust and easily generalizable across domains.",
 }
 ```
