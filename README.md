@@ -126,7 +126,9 @@ optional arguments:
                         weight decay (default 1d-5)
 ```
 
-It will be automatically saved and evaluated on the test split of your specified test dataset.
+Make sure that `<model>-retrained-<corpus>` is a pretrained model from step 2 and exists in `models/`.
+
+It will be automatically saved in `weights/` and evaluated on the test split of your specified test dataset.
 
 ### Data Pointers
 
